@@ -82,7 +82,7 @@ John   9876543210   john@example.com
 
 ## 👤 Author
 
-Developed by an Engineering Student as part of a course project 💡  
+Developed by Raghu G S, an Engineering Student as part of a course project 💡  
 Feel free to fork, modify, and enhance!
 
 ---
