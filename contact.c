@@ -66,7 +66,7 @@ void sortbyName(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = 0; i < addressBook->contactCount; i++) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -77,7 +77,7 @@ void sortbyName(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = addressBook->contactCount - 1; i >= 0; i--) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -127,7 +127,7 @@ void sortbyNumber(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = 0; i < addressBook->contactCount; i++) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -138,7 +138,7 @@ void sortbyNumber(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = addressBook->contactCount - 1; i >= 0; i--) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -188,7 +188,7 @@ void sortbyEmail(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = 0; i < addressBook->contactCount; i++) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -199,7 +199,7 @@ void sortbyEmail(AddressBook *addressBook)
         printf("\t---------------------------------------------------------------------------------\n");
         for (int i = addressBook->contactCount - 1; i >= 0; i--) 
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n", addressBook->contacts[i].name, addressBook->contacts[i].phone, addressBook->contacts[i].email);
         }
         printf("\t---------------------------------------------------------------------------------\n");
     }
@@ -324,7 +324,7 @@ void searchName(AddressBook *addressBook)
     {
         if ((strcasestr(addressBook->contacts[i].name,name) != NULL))
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
             j++;
         }
         i++;
@@ -357,7 +357,7 @@ void searchNumber(AddressBook *addressBook)
     {
         if ((strcasestr(addressBook->contacts[i].phone,temp_num) != NULL))
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
             j++;
         }
         i++;
@@ -390,7 +390,7 @@ void searchEmail(AddressBook *addressBook)
     {
         if ((strcasestr(addressBook->contacts[i].email,temp_email) != NULL))
         {
-            printf("\t|\t%s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
+            printf("\t|\t%-10s\t|\t%s\t|\t%s  \t|\n",addressBook->contacts[i].name,addressBook->contacts[i].phone,addressBook->contacts[i].email);
             j++;
         }
         i++;
