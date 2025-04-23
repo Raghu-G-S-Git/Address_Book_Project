@@ -27,7 +27,7 @@ int main() {
         printf("6. Exit\n");
         printf("Enter your choice: ");
         scanf(" %d", &choice);
-        
+        getchar();
         switch (choice) {
             case 1:
                 createContact(&addressBook);
@@ -49,6 +49,7 @@ int main() {
                 printf("Enter your choice: ");
                 int sortChoice;
                 scanf(" %d", &sortChoice);
+                getchar();
                 listContacts(&addressBook, sortChoice);
                 break;
             case 6:
